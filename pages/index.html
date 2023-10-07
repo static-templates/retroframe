@@ -1,0 +1,43 @@
+<layout title="Retro-frame Template" src="main.html">
+    
+      <main class="relative flex flex-col items-start justify-center w-full h-full max-w-5xl p-0 px-12 py-16 mx-auto ">
+        <include src="theme-switcher.html"></include>
+        <div class="z-20 flex items-start justify-between w-full opacity-100">
+            <div class="relative space-y-11">
+                <include src="image-box.html"></include>
+                <include src="education-box.html"></include>
+            </div>
+            <div class="relative flex flex-col items-center justify-center w-full h-auto pt-4 space-y-6 mr-14">
+                
+                <div class="absolute inset-0 w-full h-full pt-12">
+                    <div class="relative inset-0 w-full h-full border-r-4 border-black"></div>
+                </div>
+                <include src="name-box.html"></include>
+                <include src="role-box.html" role="Web Developer/Designer"></include>
+                <div class="relative">
+                    <include src="title-box.html" title="Profile"></include>
+                    <include src="details-profile.html"></include>
+                    <include src="title-box.html" title="Skills"></include>
+                    <include src="details-skills.html"></include>
+                    <include src="title-box-minimal.html" title="Contact Details"></include>
+                    <include src="details-contact.html"></include>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-7/12 mt-16">
+            <include src="title-box-experiences.html"></include>
+        </div>
+        <div class="relative w-full px-3">
+            <div class="relative">
+                <include src="smiley.html"></include>
+            </div>
+            <include src="sparkles.html"></include>
+            <include src="experiences.html"></include>
+        </div>
+        
+        <div class="absolute inset-0 w-full h-full opacity-100">
+            <include src="background-frame.html"></include>
+        </div>
+      </main>
+
+</layout>

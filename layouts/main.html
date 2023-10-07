@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body{
+            font-family: 'Space Mono', monospace;
+        }
+        .heading-font{
+            font-family: 'Lancelot', cursive;
+        }
+    </style>
+    <title>{title}</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    {tailwindcss}
+</head>
+<body class="bg-autumn-dark">
+    <div id="grid" class="fixed inset-0 z-0 w-screen h-screen opacity-10"></div>
+    {slot}
+    
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

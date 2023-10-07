@@ -1,0 +1,74 @@
+<div class="absolute top-0 right-0 z-40 -translate-x-2.5 translate-y-6">
+    <div class="relative pb-20 pl-5 mt-0 pt-14" onmouseleave="document.getElementById('color-picker').classList.add('hidden')">
+        <button onclick="document.getElementById('color-picker').classList.toggle('hidden')" class="absolute top-0 right-0 flex items-center justify-center w-10 h-10 mt-16 mr-12 border-2 border-black cursor-pointer bg-autumn-light">
+            <svg class="w-6 h-6 text-black translate-y-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 112.5" version="1.1" x="0px" y="0px"><path d="M52.941 74.118h-5.294v-5.294h5.294v5.294Zm5.294-5.294h-5.294v-5.295h5.294v5.295ZM47.647 79.412h-5.294v-5.294h5.294v5.294Zm-5.294 5.294h-5.294v-5.294h5.294v5.294Zm-10.588 0h5.294V90h-5.294v-5.294Zm-5.294-5.294h5.294v5.294H26.47v-5.294Zm-5.295-5.294h5.295v5.294h-5.295v-5.294Zm-5.294-5.294h5.294v5.294h-5.294v-5.294Zm-5.294-5.295h5.294v5.295h-5.294v-5.295Zm-5.294-5.294h5.294v5.294H5.294v-5.294ZM0 52.941h5.294v5.294H0v-5.294Zm5.294-5.294h5.294v5.294H5.294v-5.294Zm5.294-5.294h5.294v5.294h-5.294v-5.294Zm5.294-5.294h5.294v5.294h-5.294v-5.294Zm5.294-5.294h5.295v5.294h-5.295v-5.294Zm5.295-5.294h5.294v5.294H26.47V26.47Zm15.882-15.883h5.294v5.294h-5.294v-5.294Zm21.176 42.353h5.295v5.294h-5.295v-5.294Zm-5.294 5.294h5.294v5.294h-5.294v-5.294ZM47.647 42.353h5.294v5.294h-5.294v-5.294ZM42.353 26.47h5.294v5.294h-5.294V26.47Zm0 5.294h5.294v5.294h-5.294v-5.294Zm0 5.294h5.294v5.294h-5.294v-5.294ZM26.47 0h5.294v5.294H26.47V0Zm5.294 0h5.294v5.294h-5.294V0ZM21.176 5.294h5.295v5.294h-5.295V5.294Zm0 5.294h5.295v5.294h-5.295v-5.294Zm0 5.294h5.295v5.294h-5.295v-5.294Zm0 5.294h5.295v5.295h-5.295v-5.295Zm0 5.295h5.295v5.294h-5.295V26.47ZM37.06 0h5.294v5.294h-5.294V0Zm0 42.353h5.294v5.294h-5.294v-5.294Zm5.294 5.294h5.294v5.294h-5.294v-5.294Zm-10.588-26.47h5.294v5.294h-5.294v-5.295Zm5.294-5.295h5.294v5.294h-5.294v-5.294Zm5.294 5.294h5.294v5.295h-5.294v-5.295Zm5.294 5.295h5.294v5.294h-5.294V26.47Zm5.294 5.294h5.294v5.294h-5.294v-5.294Zm5.294 5.294h5.294v5.294h-5.294v-5.294Zm10.589 10.588h5.294v5.294h-5.294v-5.294Zm0-5.294h5.294v5.294h-5.294v-5.294Zm-5.295-5.294h5.295v5.294h-5.295v-5.294Zm-5.294-5.294h5.294v5.294h-5.294v-5.294Zm10.589 5.294h5.294v5.294h-5.294v-5.294Zm-5.295-5.294h5.295v5.294h-5.295v-5.294Zm10.589 10.588h5.294v5.294h-5.294v-5.294Zm0 5.294h5.294v5.294h-5.294v-5.294Zm-5.294 5.294h5.294v5.294h-5.294v-5.294Zm5.294 5.294h5.294v5.294h-5.294v-5.294Zm-5.294 5.294h5.294v5.295h-5.294v-5.295Zm0-5.294h5.294v5.294h-5.294v-5.294Zm5.294-5.294h5.294v5.294h-5.294v-5.294Zm0 10.588h5.294v5.295h-5.294v-5.295Zm0 5.295h5.294v5.294h-5.294v-5.294Zm-5.294 5.294h5.294v5.294h-5.294v-5.294Zm0-5.294h5.294v5.294h-5.294v-5.294Zm10.588-5.295h5.294v5.295h-5.294v-5.295Zm0-5.294h5.294v5.294h-5.294v-5.294Zm0-5.294h5.294v5.294h-5.294v-5.294Zm0-5.294h5.294v5.294h-5.294v-5.294Zm-15.883-5.294h5.295v5.294h-5.295v-5.294Zm-21.176-26.47h5.294v5.293h-5.294v-5.294Zm0-10.589h5.294v5.294h-5.294V5.294Z" fill="currentColor" stroke="none" stroke-width="1" fill-rule="evenodd"/></svg>
+        </button>
+        <div id="color-picker" class="relative top-0 right-0 hidden mr-12 -mt-px translate-x-2.5 bg-autumn-light border-2 border-black translate-y-14">
+            <ul>
+                <li onclick="changeTheme('autumn')" class="flex items-center justify-between w-full px-3 py-2 space-x-3 cursor-pointer keep-color hover:bg-black/10">
+                    <span class="text-sm font-medium text-neutral-800 keep-color">Autumn</span>
+                    <span class="flex items-center justify-center flex-shrink-0">
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-autumn-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-autumn-mid-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-autumn-mid-light"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-autumn-light"></span>
+                    </span>
+                </li>
+                <li onclick="changeTheme('candy')" class="flex items-center justify-between w-full px-3 py-2 space-x-3 cursor-pointer keep-color hover:bg-black/10">
+                    <span class="text-sm font-medium text-neutral-800 keep-color">Candy</span>
+                    <span class="flex items-center justify-center flex-shrink-0">
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-candy-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-candy-mid-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-candy-mid-light"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-candy-light"></span>
+                    </span>
+                </li>
+                <li onclick="changeTheme('cool')" class="flex items-center justify-between w-full px-3 py-2 space-x-3 cursor-pointer keep-color hover:bg-black/10">
+                    <span class="text-sm font-medium text-neutral-800 keep-color">Cool</span>
+                    <span class="flex items-center justify-center flex-shrink-0">
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-cool-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-cool-mid-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-cool-mid-light"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-cool-light"></span>
+                    </span>
+                </li>
+                <li onclick="changeTheme('grayscale')" class="flex items-center justify-between w-full px-3 py-2 space-x-3 cursor-pointer keep-color hover:bg-black/10">
+                    <span class="text-sm font-medium text-neutral-800 keep-color">Gray-scale</span>
+                    <span class="flex items-center justify-center flex-shrink-0">
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-grayscale-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-grayscale-mid-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-grayscale-mid-light"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-grayscale-light"></span>
+                    </span>
+                </li>
+                <li onclick="changeTheme('pastel')" class="flex items-center justify-between w-full px-3 py-2 space-x-3 cursor-pointer keep-color hover:bg-black/10">
+                    <span class="text-sm font-medium text-neutral-800 keep-color">Pastel</span>
+                    <span class="flex items-center justify-center flex-shrink-0">
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-pastel-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-pastel-mid-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-pastel-mid-light"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-pastel-light"></span>
+                    </span>
+                </li>
+                <li onclick="changeTheme('sand-and-sea')" class="flex items-center justify-between w-full px-3 py-2 space-x-3 cursor-pointer keep-color hover:bg-black/10">
+                    <span class="text-sm font-medium text-neutral-800 keep-color">Sand & Sea</span>
+                    <span class="flex items-center justify-center flex-shrink-0">
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-sand-and-sea-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-sand-and-sea-mid-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-sand-and-sea-mid-light"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-sand-and-sea-light"></span>
+                    </span>
+                </li>
+                <li onclick="changeTheme('vibrant')" class="flex items-center justify-between w-full px-3 py-2 space-x-3 cursor-pointer keep-color hover:bg-black/10">
+                    <span class="text-sm font-medium text-neutral-800 keep-color">Vibrant</span>
+                    <span class="flex items-center justify-center flex-shrink-0">
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-vibrant-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-vibrant-mid-dark"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-vibrant-mid-light"></span>
+                        <span class="w-4 h-4 -mx-0.5 border border-black rounded-full keep-color bg-vibrant-light"></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
