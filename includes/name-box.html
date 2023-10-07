@@ -1,13 +1,20 @@
 
-    <div class="relative flex flex-col items-stretch w-full h-auto pl-10 justify-stretch">
+    <div class="relative flex flex-row items-center justify-center w-full h-auto sm:py-10 sm:pb-3 md:items-stretch md:p-0 md:pl-5 md:flex-col md:justify-stretch">
+
+        
+
         <!-- The shadow/offset div -->
-        <div class="absolute inset-0 w-full h-full pl-10">
+        <div class="absolute inset-0 hidden w-full h-full pl-5 md:block">
             <div class="relative inset-0 w-auto h-full border-[3px] border-black bg-autumn-mid-dark"></div>
         </div>
 
+        <div class="relative z-40 flex-shrink-0 block w-24 overflow-hidden border-2 border-black sm:w-32 sm:h-32 md:w-40 md:h-40 md:hidden bg-none">
+            <img src="/assets/images/photo.jpg" alt="{name}" class="object-cover w-full h-auto" />
+        </div>
+        
         <!-- The main title div -->
-        <div class="relative flex-shrink-0 w-full py-5 border-[3px] border-black -translate-y-4  -translate-x-3 bg-autumn-light">
-            <h1 class="text-5xl font-bold text-center heading-font">Nathan Brooks</h1>
-            <p class="hidden text-xl text-gray-600">Web Developer/Designer</p>
+        <div class="relative flex-shrink-0 w-auto md:w-full md:pl-0 pl-10 py-5 md:border-[3px] border-black md:-translate-y-4  md:-translate-x-3 md:bg-autumn-light">
+            <h1 class="text-4xl font-bold text-left md:text-center sm:text-5xl heading-font">{name}</h1>
+            <h2 class="block text-xl font-semibold text-left sm:text-2xl md:hidden heading-font">{role}</h2>
         </div>
     </div>

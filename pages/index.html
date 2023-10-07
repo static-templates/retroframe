@@ -1,19 +1,19 @@
 <layout title="Retro-frame Template" src="main.html">
     
-      <main class="relative flex flex-col items-start justify-center w-full h-full max-w-5xl p-0 px-12 py-16 mx-auto ">
+      <main class="relative flex flex-col items-start justify-center w-full h-full max-w-5xl p-0 pb-px mx-auto mb-3 overflow-hidden sm:pb-10 sm:mb-0 md:px-12 md:py-12 lg:py-16 ">
         <include src="theme-switcher.html"></include>
-        <div class="z-20 flex items-start justify-between w-full opacity-100">
-            <div class="relative space-y-11">
-                <include src="image-box.html"></include>
+        <div class="z-20 flex flex-col-reverse items-start justify-between w-full opacity-100 md:flex-row">
+            <div class="relative w-full pl-5 sm:pl-[60px] sm:pt-0 pt-2 sm:pr-[42px] md:space-y-7 md:w-auto md:px-0">
+                <include src="image-box-desktop.html"></include>
                 <include src="education-box.html"></include>
             </div>
             <div class="relative flex flex-col items-center justify-center w-full h-auto pt-4 space-y-6 mr-14">
-                <div class="absolute inset-0 w-full h-full pt-12">
+                <div class="absolute inset-0 hidden w-full h-full pt-12 md:block">
                     <div class="relative inset-0 w-full h-full border-r-4 border-black"></div>
                 </div>
-                <include src="name-box.html"></include>
+                <include src="name-box.html" name="Nathan Brooks" role="Web Developer/Designer"></include>
                 <include src="role-box.html" role="Web Developer/Designer"></include>
-                <div class="relative">
+                <div class="relative sm:pt-0 sm:pb-5 sm:p-10 md:p-0">
                     <include src="title-box.html" title="Profile"></include>
                     <include src="details-profile.html"></include>
                     <include src="title-box.html" title="Skills"></include>
@@ -23,10 +23,10 @@
                 </div>
             </div>
         </div>
-        <div class="relative w-7/12 mt-16">
+        <div class="relative w-full mt-5 sm:px-10 md:mt-16 md:w-7/12 md:px-0">
             <include src="title-box-experiences.html"></include>
         </div>
-        <div class="relative w-full px-3">
+        <div class="relative w-full pl-5 pr-14 sm:px-10 md:px-3">
             <div class="relative">
                 <include src="smiley.html"></include>
             </div>
